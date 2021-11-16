@@ -1,7 +1,7 @@
 from turtle import Turtle
 
-UP = 90
-DOWN = 270
+UP = 0
+DOWN = 180
 
 class Paleta(Turtle):
     def __init__(self):
@@ -14,11 +14,14 @@ class Paleta(Turtle):
         self.setheading(UP)
 
     def up(self):
-        self.setheading(UP)
         self.forward(20)
 
     def down(self):
-        self.setheading(DOWN)
-        self.forward(20)
+        self.forward(-20)
+
+
+
+
+
 
 

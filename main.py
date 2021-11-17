@@ -43,7 +43,7 @@ while game_is_on:
     pelota_en_juego = True
     while pelota_en_juego:
         ball.move()
-        if ball.ycor() > 200 or ball.ycor() < -200:
+        if ball.ycor() > 400 or ball.ycor() < -400:
             screen.tracer(0)
             ball.bounce()
             screen.tracer(1)

@@ -16,13 +16,13 @@ class Ball(Turtle):
         
 
     def direction(self):
-        direction = random.randint(0, 1)    # 0 para LEFT, 1 para RIGHT
-        # LEFT = (45, 135)
-        # RIGHT = (315, 225)
+        direction = random.randint(0, 1)    # 0 = LEFT, 1 = RIGHT
+        # LEFT = (315, 225)
+        # RIGHT = (45, 135)
         if direction == 0:
-            angle = random.randint(1, 180)
+            angle = random.randint(315, 225)
         elif direction == 1:
-            angle = random.randint(180, 360)
+            angle = random.randint(45, 135)
 
         self.setheading(angle)
         

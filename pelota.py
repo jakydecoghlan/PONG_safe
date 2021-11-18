@@ -11,7 +11,7 @@ class Ball(Turtle):
         self.penup()
         self.shape("turtle")
         self.color("white")
-        self.speed(4)
+
 
     def direction(self):
         direction = random.randint(0, 1)  # 0 = LEFT, 1 = RIGHT
@@ -38,6 +38,14 @@ class Ball(Turtle):
         self.setheading(360 - angle)
 
     def goal(self):
+        if self.xcor() > 0:
+            angle = random.randint(225, 315)
+            self.setheading(angle)
+        elif self.xcor() < 0:
+            angle = random.randint(45, 135)
+            self.setheading(angle)
         self.goto(0, 0)
-        self.bounce_x()
+
+
+
 
